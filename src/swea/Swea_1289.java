@@ -25,7 +25,7 @@ public class Swea_1289 {
 
 		}
 
-		
+		sc.close();
 	}
 
 }
