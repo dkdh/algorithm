@@ -25,6 +25,8 @@ public class Solution_1954 {
 				System.out.println();
 			}
 		}
+		
+		sc.close();
 	}
 	
 	public static void makeSnail(int[][] snail, int r, int c, int size, int cnt) {
