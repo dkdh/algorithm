@@ -4,6 +4,12 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+// 어떤 숫자 k에 대해서 +1 인 방이 주변에 있는지 확인하고 따라가면서 cnt++ 하면서 세는 방식인데
+// 일단 k에 대해서 cnt개만큼의 방을 찾아갈 수 있다면 k와 k+cnt 만큼의 방에서는 최대 k+cnt 까지 따라갈 수 있다는 거고
+// 그건 k에서의 max 보다는 무조건 작으니까 k에서 k+cnt 까지 따라간 다음에 막혔으면(다음 이동할 방이 없다면)
+// 그 다음 탐색은 k+cnt+1 부터 시작하면 됨.
+
+// 반복문 구현
 public class Solution_1861 {
 
 	public static void main(String[] args) throws Exception {
